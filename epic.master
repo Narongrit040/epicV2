@@ -1,0 +1,90 @@
+﻿<%@ Master Language="VB" CodeFile="epic.master.vb" Inherits="epic" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+ <title>EPIC PRECENT</title>
+        <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        #Text1 {
+            height: 113px;
+            width: 228px;
+        }
+
+            /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+      
+            <table cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td width="100%" higth="20px" alingh>&nbsp;<center><img src="img/Banner.png" style="height: 217px" /><center></td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" BackColor="#B5C7DE" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" StaticSubMenuIndent="10px">
+                            <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <DynamicMenuStyle BackColor="#B5C7DE" />
+                            <DynamicSelectedStyle BackColor="#507CD1" />
+                            <Items>
+                                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/index.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Member" Value="Member">
+                                    <asp:MenuItem Text="5830213008" Value="1" NavigateUrl="~/5830213008.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="5830213015" Value="2" NavigateUrl="~/5830213015.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="5830213017" Value="3" NavigateUrl="~/5830213017.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="5830213035" Value="4" NavigateUrl="~/5830213035.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="5830213040" Value="5" NavigateUrl="~/5830213040.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="5830213044" Value="6" NavigateUrl="~/5830213044.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Contact" Value="Contact" NavigateUrl="~/contact.aspx"></asp:MenuItem>
+                            </Items>
+                            <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <StaticSelectedStyle BackColor="#507CD1" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+              </asp:ContentPlaceHolder>
+                    </td>
+
+                </tr>
+            </table>
+
+    </div>
+    </form>
+</body>
+</html>
