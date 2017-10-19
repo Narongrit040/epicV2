@@ -26,6 +26,6 @@
                             <p>
                 <asp:Button class="button" ID="submit" runat="server" Text="Submit" />
             </p>
-<asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+<asp:ValidationSummary ID="ValidationSummary1" runat="server" ShowMessageBox="True" ShowSummary="False" />
 </asp:Content>
 
