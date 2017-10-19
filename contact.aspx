@@ -10,10 +10,14 @@
                 <p>
                     Email <br>
                     <asp:TextBox ID="email" type="email" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="reqFullName" runat="server" ControlToValidate="email" ErrorMessage="กรอก Email" ForeColor="Red">*</asp:RequiredFieldValidator>
                 </p>
+<p>
+                    &nbsp;</p>
                 <p>
                     Subject <br>
                     <asp:TextBox ID="subject" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="reqSubject" runat="server" ControlToValidate="subject" ErrorMessage="กรอก Subject" ForeColor="Red">*</asp:RequiredFieldValidator>
                 </p>
                 <p>
                     Description</p>
@@ -22,5 +26,6 @@
                             <p>
                 <asp:Button class="button" ID="submit" runat="server" Text="Submit" />
             </p>
+<asp:ValidationSummary ID="ValidationSummary1" runat="server" />
 </asp:Content>
 
