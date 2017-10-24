@@ -88,8 +88,6 @@ textarea {
 }
 
 input {
-    width: 20%;
-    height: 20px;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -97,4 +95,5 @@ input {
     background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
+    margin-bottom: 0px;
 }
