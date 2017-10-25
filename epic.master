@@ -65,6 +65,7 @@
                                     <asp:MenuItem Text="5830213040" Value="5" NavigateUrl="~/5830213040.aspx"></asp:MenuItem>
                                     <asp:MenuItem Text="5830213044" Value="6" NavigateUrl="~/5830213044.aspx"></asp:MenuItem>
                                 </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/CreateMember.aspx" Text="Create Mamber" Value="Create Mamber"></asp:MenuItem>
                                 <asp:MenuItem Text="Contact" Value="Contact" NavigateUrl="~/contact.aspx"></asp:MenuItem>
                             </Items>
                             <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
